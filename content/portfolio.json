@@ -1,0 +1,12 @@
+{
+  "HeaderTitle": "Dries Hooghe | Portfolio",
+  "PageTitle": "My Github repositories",
+  "Subtitles": {
+    "Active": "Active repositories",
+    "Archived": "Archived repositories"
+  },
+  "Repo": {
+    "Language": "Project language"
+  }
+}
+

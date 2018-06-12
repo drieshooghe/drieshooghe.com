@@ -1,0 +1,9 @@
+@tailwind preflight;
+
+@tailwind components;
+
+@tailwind utilities;
+
+.trans {
+    transition: all .3s ease-in-out;
+}
