@@ -9,15 +9,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@gitlab.com/drieshooghe/drieshooghe.git"
+    "url": "git+ssh://git@github.com:drieshooghe/drieshooghe.com.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Dries Hooghe",
   "license": "ISC",
-  "bugs": {
-    "url": "https://gitlab.com/drieshooghe/drieshooghe/issues"
-  },
-  "homepage": "https://gitlab.com/drieshooghe/drieshooghe#README",
+  "homepage": "https://github.com/drieshooghe/drieshooghe.com",
   "devDependencies": {
     "cross-env": "^5.1",
     "css-loader": "^0.28.7",
