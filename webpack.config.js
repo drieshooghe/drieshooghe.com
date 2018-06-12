@@ -3,10 +3,6 @@ const path = require('path');
 
 module.exports = {
     entry: './resources/scripts/main.js',
-    output: {
-        path: path.resolve(__dirname, 'static'),
-        filename: 'main.css',
-    },
     module: {
         rules: [
             {
@@ -18,15 +14,22 @@ module.exports = {
                         'postcss-loader'
                     ]
                 })
+            },
+            {
+                test: /\.tsx?$/,
+                use: 'ts-loader',
+                exclude: /node_modules/
             }
         ]
     },
+    resolve: {
+        extensions: ['.ts', '.js']
+    },
+    output: {
+        path: path.resolve(__dirname, 'static'),
+        filename: 'main.js',
+    },
     plugins: [
         new ExtractTextPlugin('main.css')
-    ],
-    resolve: {
-        alias: {
-          'vue$': 'vue/dist/vue.esm.js' // 'vue/dist/vue.common.js' for webpack 1
-        }
-      }
+    ]
 }

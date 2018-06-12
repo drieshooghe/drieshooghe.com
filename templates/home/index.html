@@ -1,6 +1,6 @@
 {{define "content"}}
 
-<body class="bg-grey-light">
+<body id="home" class="bg-grey-light">
     <div class="container font-sans">
         <div class="flex flex-wrap h-screen">
             <div class="w-full h-70pt md:w-1/2 mt-8 mb-8">
@@ -20,13 +20,13 @@
                             </div>
                             {{ range $svc, $link := .Content.Links }}
                             <div class="block pb-2">
-                                    <span class="ml-8 mr-2">*</span>
-                                    <a href="{{ $link }}" class="no-underline">{{ $svc }}</a>
+                                <span class="ml-8 mr-2">*</span>
+                                <a href="{{ $link }}" class="no-underline">{{ $svc }}</a>
                             </div>
                             {{ end }}
                             <div class="pb-4">
-                                    <span class="mr-4">></span><span id="cursor"></span>
-                                </div>
+                                <span class="mr-4">></span><span class="cursor"></span>
+                            </div>
                         </div>
                     </div>
                 </div>

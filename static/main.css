@@ -3580,6 +3580,10 @@ button,
   transition: all .3s ease-in-out;
 }
 
+.trans-short {
+  transition: all .1s ease-in-out;
+}
+
 @media (min-width: 576px) {
   .sm\:list-reset {
     list-style: none;
