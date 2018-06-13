@@ -1,11 +1,12 @@
 // -------------- DEPENDENCIES --------------
 var gulp = require('gulp');
-var ts = require("gulp-typescript");
-
+var vendorPaths = [
+    'node_modules/cookieconsent/build/cookieconsent.min.js'
+]
 // -------------- TASKS --------------
 
 // Compile css
-gulp.task('css', function () {
+gulp.task('styles', function () {
     var postcss = require('gulp-postcss');
     var tailwindcss = require('tailwindcss');
     var atImport = require('postcss-import');
@@ -20,11 +21,25 @@ gulp.task('css', function () {
   });
 
 // Compile javascript
-gulp.task("ts", function () {
-    var tsResult = gulp.src("resources/scripts/*.ts")
+gulp.task("scripts", function () {
+    var ts = require("gulp-typescript");
+    var merge = require('event-stream').merge;
+    var concat = require("gulp-concat");
+    var uglify = require("gulp-uglify");
+    var sourcemaps = require('gulp-sourcemaps');
+
+    var vendors = gulp.src(vendorPaths);
+
+    var custom = gulp.src('resources/scripts/*.ts')
         .pipe(ts({
-              noImplicitAny: true,
-              out: "main.js"
+            noImplicitAny: true,
+            out: 'custom.js'
         }));
-    return tsResult.js.pipe(gulp.dest("static/"));
+
+    return merge(vendors, custom)
+        .pipe(sourcemaps.init())
+        .pipe(concat('main.js'))
+        .pipe(uglify())
+        .pipe(sourcemaps.write('/'))
+        .pipe(gulp.dest('static/'));
 });
