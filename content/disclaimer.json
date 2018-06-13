@@ -1,0 +1,44 @@
+{
+  "HeaderTitle": "Dries Hooghe | Disclaimer",
+  "PageTitle": "Privacy Disclaimer",
+  "Content": {
+    "Cookies": {
+      "Title": "COOKIE POLICY drieshooghe.com",
+      "Sections": {
+        " 1. General": [
+          "drieshooghe.com mainly uses cookies to improve your browsing experience at http://www.drieshooghe.com (hereinafter referred to as “Website”). All the data that drieshooghe.com extracts from its cookies are anonymous and are only used to understand the customer experience on the Website, with the aim of improving the performance and usability of this Website.",
+          " drieshooghe.com is authorised to update this cookie policy by placing a new version on the Website. In this context, it is most highly recommended to check the Website and the page on which the cookie policy is displayed regularly, to ensure that you are aware of any changes. Whenever a new cookie policy is due to be implemented, your permission for the use of cookies will be asked again." 
+        ],
+        "2. What is a cookie?": [
+          "A cookie, also known as an HTTP cookie, web cookie or browser cookie, is usually a small text file sent from a website and stored in the user’s internet browser or on their device while a user is browsing a website or using a mobile app. When the user visits the same website in the future, the data stored in the cookie can be retrieved by the website to inform the website of the user’s previous activity. Cookies were designed to be a reliable mechanism for websites to remember the status of the website or the activity taken by the user in the past. They help us to optimize your visit to the Website, to remember technical choices (e.g. choice of language, a newsletter etc.), and to display more relevant services and offers. If you wish to consult the Website, drieshooghe.com recommends that you allow the cookies. However, if you choose not to do so, you are always free not to allow them.",
+          "Cookies may include: clicking on certain buttons, logging in or a record of the pages visited by the user, even months or years later. Although cookies cannot contain viruses and cannot install any malware on the guest computer, tracking cookies and, in particular, third-party tracking cookies are often used as ways to compile data from the browser history of individuals in the long term - a major privacy concern that motivated the European and American legislators to take action in 2011. This cookie statement is in accordance with the current Belgian Law (Law of 10/07/2012 confirming conditions with regard to electronic communication, published in the Official Gazette on 20/9/2012).",
+          "This Website uses various types of cookie:",
+          "• The strictly necessary cookies: as the name suggests, these cookies are strictly necessary to allow you to browse the Website or make use of the Platform or to provide specific functions that you have requested.",
+          "• Functional cookies: these cookies improve the way the Website functions by saving your preferences.",
+          "• Tracking cookies: these cookies will survive from one user session to another. If the Max-Age of a permanent cookie is set to 1 year, the initial value recorded in that cookie will be sent back to the server every time the user visits the server within that year. This is done to store essential information, such as how the user initially came to the Website. This is why they are also sometimes called tracking cookies. For example, once you have selected the language of your choice, the Website will include your preference in a permanent cookie and save it on your browser. When you visit the Website again after that, the Website will use that permanent cookie to ensure that the contents are displayed in your chosen language.",
+          "• Performance cookies: These cookies help to improve the performance of the Website and thus to provide a better user experience. drieshooghe.com uses Google Analytics, a popular web analysis service offered by Google Inc. Google Analytics uses cookies to help drieshooghe.com analyse how users use the Website. It registers the number of users and tells drieshooghe.com things about their general behaviour, such as the typical duration of a visit to the Website or the number of pages a user views on average.",
+          "• Third party cookies: To support its communication, drieshooghe.com has embedded its content in social media channels, including YouTube, Facebook, Twitter and LinkedIn. drieshooghe.com also makes use of the sharing opportunities on social networks. The channels that drieshooghe.com uses may contain cookies belonging to these websites that drieshooghe.com does not control. Please consult the relevant website belonging to these third parties for more information about these cookies."
+        ],
+        "3. List of cookies that the Website uses": [
+          "The table below contains a list of the cookies that drieshooghe.com uses where appropriate and the information they store.",
+          "Google Analytics cookies",
+          "We use Google Analytics cookies to collect data about your sessions on our website. For more information about how these cookies work, please consult Google’s cookie and privacy statement.",
+          "_GA",
+          "_GID",
+          " _UTMA",
+          "_UTMZ"
+        ],
+        "4. Disable cookies": [
+          "There are various options available for preventing cookies from being saved. Please visit the websites of the different browsers to find out how you can block cookies. It is good to realise that if you decide to remove all your cookies, you will most probably need to re-enter all your user names and passwords on all the websites you visit, something you never even had to think about previously. As already explained, cookies can be a real benefit to your browsing experience on the internet. If you want to find out more about cookies, please visit the website www.allaboutcookies.org. This website provides more information about cookies, explains in detail how you can remove them and shows how you can allow trusted websites to store cookies on your computer."
+        ],
+        "5. Contact details of drieshooghe.com": [
+          "Dries Hooghe",
+          "Harelbekestraat 37",
+          "8790 Waregem"
+        ]
+
+      }
+    }
+  }
+}
+

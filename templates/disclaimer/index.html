@@ -1,0 +1,29 @@
+{{define "content"}}
+
+<body id="disclaimer" class="bg-grey-light">
+    <div class="container font-sans">
+        <div class="flex flex-wrap h-screen">
+            <div class="w-full h-70pt mt-8 mb-8">
+                <div class="h-full flex flex-col">
+                    <h1 class="pt-8 pb-8">{{ .PageTitle }}</h1>
+                    <section>
+                        <h2 class="mb-4">{{ .Content.Cookies.Title }}</h2>
+                        {{ range $title, $content := .Content.Cookies.Sections }}
+                        <article class="mb-6">
+                            <h3 class="mb-2">{{ $title }}</h3>
+                            <p>
+                                {{ range $line := $content }}
+                                <span>{{ $line }}</span><br>
+                                {{ end }}
+                            </p>
+                        </article>
+                        {{ end }}
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+{{end}}

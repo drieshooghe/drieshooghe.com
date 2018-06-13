@@ -44,6 +44,7 @@ func init() {
 	r.HandleFunc("/portfolio", portfolioHandler)
 	r.HandleFunc("/about", aboutHandler)
 	r.HandleFunc("/contact", contactHandler)
+	r.HandleFunc("/disclaimer", disclaimerHandler)
 	r.NotFoundHandler = http.HandlerFunc(notFoundHandler)
 	http.Handle("/", r)
 }
