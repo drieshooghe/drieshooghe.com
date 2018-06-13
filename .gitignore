@@ -16,5 +16,6 @@ selenium-debug.log
 *.njsproj
 *.sln
 .env
+.stylelintrc
 app.yaml
 drieshooghedotcom.code-workspace

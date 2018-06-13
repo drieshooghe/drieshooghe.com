@@ -3551,6 +3551,19 @@ button,
   transition: all .1s ease-in-out;
 }
 
+.link {
+  transition: all .3s ease-in-out;
+  color: #222f3e;
+  text-decoration: none;
+  border-bottom-width: 1px;
+  border-color: #c8d6e5;
+}
+
+.link:hover {
+  border-bottom-width: 1px;
+  border-color: #8395a7;
+}
+
 @media (min-width: 576px) {
   .sm\:list-reset {
     list-style: none;

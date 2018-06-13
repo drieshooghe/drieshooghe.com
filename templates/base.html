@@ -1,6 +1,7 @@
 {{define "base"}}
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -10,6 +11,18 @@
     <link rel="stylesheet" href="static/main.css">
     <script src="static/main.js"></script>
 </head>
-{{ template "content" . }}
+
+<body class="bg-grey-light text-black">
+    {{ template "content" . }}
+</body>
+
+<footer class="font-sans p-4 flex flex-wrap">
+        <span>© Dries Hooghe</span>
+        <span class="pl-2 pr-2">&VerticalSeparator;</span>
+        <a href="/disclaimer" class="link">
+            <span>Disclaimer</span>
+        </a>
+</footer>
+
 </html>
 {{end}}
