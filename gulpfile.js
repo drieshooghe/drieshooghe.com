@@ -1,34 +1,43 @@
 // -------------- DEPENDENCIES --------------
 var gulp = require('gulp');
-var vendorPaths = [
+var ts = require("gulp-typescript");
+var merge = require('event-stream').merge;
+var concat = require("gulp-concat");
+var uglify = require("gulp-uglify");
+var sourcemaps = require('gulp-sourcemaps');
+var postcss = require('gulp-postcss');
+var tailwindcss = require('tailwindcss');
+var atImport = require('postcss-import');
+
+var jsVendors = [
     'node_modules/cookieconsent/build/cookieconsent.min.js'
+]
+var cssVendors = [
+    'node_modules/cookieconsent/build/cookieconsent.min.css'
 ]
 // -------------- TASKS --------------
 
 // Compile css
 gulp.task('styles', function () {
-    var postcss = require('gulp-postcss');
-    var tailwindcss = require('tailwindcss');
-    var atImport = require('postcss-import');
   
-    return gulp.src('resources/styles/main.css')
+    var css =  gulp.src('resources/styles/main.css')
       .pipe(postcss([
         atImport(),
         tailwindcss('./resources/scripts/tailwind.js'),
         require('autoprefixer'),
-      ]))
-      .pipe(gulp.dest('static/'));
+      ]));
+      
+    var vendors = gulp.src(cssVendors);
+
+      return merge(vendors, css)
+        .pipe(concat('main.css'))
+        .pipe(gulp.dest('static/'));
   });
 
 // Compile javascript
 gulp.task("scripts", function () {
-    var ts = require("gulp-typescript");
-    var merge = require('event-stream').merge;
-    var concat = require("gulp-concat");
-    var uglify = require("gulp-uglify");
-    var sourcemaps = require('gulp-sourcemaps');
-
-    var vendors = gulp.src(vendorPaths);
+    
+    var vendors = gulp.src(jsVendors);
 
     var custom = gulp.src('resources/scripts/*.ts')
         .pipe(ts({

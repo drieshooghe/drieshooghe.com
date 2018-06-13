@@ -10,6 +10,26 @@
     <link href="https://fonts.googleapis.com/css?family=Dosis:400,600" rel="stylesheet">
     <link rel="stylesheet" href="static/main.css">
     <script src="static/main.js"></script>
+    <script>
+        window.addEventListener("load", function () {
+            window.cookieconsent.initialise({
+                "palette": {
+                    "popup": {
+                        "background": "#222f3e"
+                    },
+                    "button": {
+                        "background": "#2e86de"
+                    }
+                },
+                "theme": "classic",
+                "content": {
+                    "message": "This website uses cookies to optimise your user experience. We are required by law to inform you of this. Would you like to know more about cookies?",
+                    "link": "If so, click here.",
+                    "href": "/disclaimer"
+                }
+            })
+        });
+    </script>
 </head>
 
 <body class="bg-grey-light text-black">
@@ -17,11 +37,11 @@
 </body>
 
 <footer class="font-sans p-4 flex flex-wrap">
-        <span>© Dries Hooghe</span>
-        <span class="pl-2 pr-2">&VerticalSeparator;</span>
-        <a href="/disclaimer" class="link">
-            <span>Disclaimer</span>
-        </a>
+    <span>© Dries Hooghe</span>
+    <span class="pl-2 pr-2">&VerticalSeparator;</span>
+    <a href="/disclaimer" class="link">
+        <span>Disclaimer</span>
+    </a>
 </footer>
 
 </html>
