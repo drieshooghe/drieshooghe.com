@@ -10,27 +10,37 @@
                 </div>
                 <div class="flex-1 bg-white rounded-less m-4px">
                     <div class="p-4 pt-6">
-                        <div id="home-message" class="pb-4">
-                            <span class="mr-4">></span>{{ .Content.Message }}
+                        <div class="pb-4">
+                            <div class="js-typewriting hidden">
+                                <span class="mr-4 js-prompt-icon">></span>
+                                <span class="js-text">{{ .Content.Message }}</span>
+                            </div>
                         </div>
                         <div class="pb-4">
-                            <span class="mr-4">></span>{{ .Content.Submessage }}
+                            <div class="js-typewriting hidden">
+                                <span class="mr-4 js-prompt-icon">></span>
+                                <span class="js-text">{{ .Content.Submessage }}</span>
+                            </div>
                         </div>
                         {{ range $svc, $link := .Content.Links }}
                         <div class="block pb-2">
-                            <span class="ml-6 mr-2">*</span>
-                            <a href="{{ $link }}" class="link">{{ $svc }}</a>
+                            <div class="js-typewriting hidden">
+                                <div class="js-text">
+                                    <span class="ml-6 mr-2">*</span>
+                                    <a href="{{ $link }}" class="link">{{ $svc }}</a>
+                                </div>
+                            </div>
                         </div>
                         {{ end }}
                         <div class="pb-4">
-                            <span class="mr-4">></span><span class="cursor"></span>
+                            <div class="js-typewriting hidden">
+                                <span class="mr-4 js-prompt-icon">></span>
+                                <span class="js-text cursor border-black"></span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="w-full h-20pt mt-10pt md:w-1/2">
-            <div></div>
         </div>
     </div>
 </div>

@@ -680,6 +680,24 @@ button,
   border-color: #8395a7;
 }
 
+.cursor {
+  border-right: .05em solid;
+  -webkit-animation: caret 1s steps(1) infinite;
+          animation: caret 1s steps(1) infinite;
+}
+
+@-webkit-keyframes caret {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@keyframes caret {
+  50% {
+    border-color: transparent;
+  }
+}
+
 .list-reset {
   list-style: none;
   padding: 0;
