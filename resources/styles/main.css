@@ -1,22 +1,6 @@
-@tailwind preflight;
+@import "tailwindcss/preflight";
 
-@tailwind components;
+@import "tailwindcss/components";
+@import "components/links";
 
-@tailwind utilities;
-
-// Transitions
-.trans {
-    transition: all .3s ease-in-out;
-}
-
-.trans-short {
-    transition: all .1s ease-in-out;
-}
-
-// Extracted components
-.link{
-    @apply .trans .text-black .no-underline .border-b .border-grey-light;
-}
-.link:hover{
-    @apply .border-b .border-grey;
-}
+@import "tailwindcss/utilities";

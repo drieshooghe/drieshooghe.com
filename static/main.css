@@ -661,6 +661,19 @@ button,
   }
 }
 
+.link {
+  color: #222f3e;
+  text-decoration: none;
+  border-bottom-width: 1px;
+  border-color: #c8d6e5;
+  transition: all .3s ease-in-out;
+}
+
+.link:hover {
+  border-bottom-width: 1px;
+  border-color: #8395a7;
+}
+
 .list-reset {
   list-style: none;
   padding: 0;
@@ -3541,27 +3554,6 @@ button,
 
 .z-auto {
   z-index: auto;
-}
-
-.trans {
-  transition: all .3s ease-in-out;
-}
-
-.trans-short {
-  transition: all .1s ease-in-out;
-}
-
-.link {
-  transition: all .3s ease-in-out;
-  color: #222f3e;
-  text-decoration: none;
-  border-bottom-width: 1px;
-  border-color: #c8d6e5;
-}
-
-.link:hover {
-  border-bottom-width: 1px;
-  border-color: #8395a7;
 }
 
 @media (min-width: 576px) {

@@ -8,10 +8,12 @@ var ts = require("gulp-typescript");
 gulp.task('css', function () {
     var postcss = require('gulp-postcss');
     var tailwindcss = require('tailwindcss');
+    var atImport = require('postcss-import');
   
     return gulp.src('resources/styles/main.css')
       .pipe(postcss([
-        tailwindcss('./resources/styles/tailwind.js'),
+        atImport(),
+        tailwindcss('./resources/scripts/tailwind.js'),
         require('autoprefixer'),
       ]))
       .pipe(gulp.dest('static/'));
