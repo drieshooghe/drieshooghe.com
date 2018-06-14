@@ -681,7 +681,7 @@ button,
 }
 
 .cursor {
-  border-right: .05em solid;
+  border-right: .05em solid #222f3e;
   -webkit-animation: caret 1s steps(1) infinite;
           animation: caret 1s steps(1) infinite;
 }

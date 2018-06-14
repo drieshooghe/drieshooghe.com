@@ -11,31 +11,29 @@
                 <div class="flex-1 bg-white rounded-less m-4px">
                     <div class="p-4 pt-6">
                         <div class="pb-4">
-                            <div class="js-typewriting{{/* hidden */}}">
-                                <span class="mr-4 js-prompt-icon">></span>
-                                <span class="js-text">{{ .Content.Message }}</span>
+                            <div class="js-typewriting hidden">
+                                <span class="mr-4 js-prompt-icon" data-content=">"></span>
+                                <span class="js-prompt-text" data-content="{{ .Content.Message }}"></span>
                             </div>
                         </div>
                         <div class="pb-4">
-                            <div class="js-typewriting{{/* hidden */}}">
-                                <span class="mr-4 js-prompt-icon">></span>
-                                <span class="js-text">{{ .Content.Submessage }}</span>
+                            <div class="js-typewriting hidden">
+                                <span class="mr-4 js-prompt-icon" data-content=">"></span>
+                                <span class="js-prompt-text" data-content="{{ .Content.Submessage }}"></span>
                             </div>
                         </div>
                         {{ range $svc, $link := .Content.Links }}
                         <div class="block pb-2">
-                            <div class="js-typewriting{{/* hidden */}}">
-                                <div class="js-text">
-                                    <span class="ml-6 mr-2">*</span>
-                                    <a href="{{ $link }}" class="link">{{ $svc }}</a>
-                                </div>
+                            <div class="js-typewriting hidden">
+                                <span class="js-prompt-prefix ml-6 mr-2" data-content="*"></span>
+                                <a href="{{ $link }}" class="js-prompt-text link" data-content="{{ $svc }}"></a>
                             </div>
                         </div>
                         {{ end }}
                         <div class="pb-4">
-                            <div class="js-typewriting{{/* hidden */}}">
-                                <span class="mr-4 js-prompt-icon">></span>
-                                <span class="js-text cursor border-black"></span>
+                            <div class="js-typewriting hidden">
+                                <span class="mr-4 js-prompt-icon" data-content=">"></span>
+                                <span class="cursor border-black"></span>
                             </div>
                         </div>
                     </div>

@@ -42,7 +42,8 @@ gulp.task("scripts", function () {
     var custom = gulp.src('resources/scripts/*.ts')
         .pipe(ts({
             noImplicitAny: true,
-            out: 'custom.js'
+            out: 'custom.js',
+            lib: ["es2015", "es2016", "es2017", "dom"]
         }));
 
     return merge(vendors, custom)

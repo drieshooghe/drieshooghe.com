@@ -1,5 +1,5 @@
 .cursor{
-    border-right: .05em solid;
+    border-right: .05em solid #222f3e;
     animation: caret 1s steps(1) infinite;
 }
 
