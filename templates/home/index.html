@@ -11,27 +11,27 @@
                 <div class="flex-1 bg-white rounded-b-less m-4px">
                     <div class="p-4 pt-6">
                         <div class="pb-4">
-                            <div class="js-typewriting">
+                            <div class="js-typewriting flex">
                                 <span class="mr-4 js-prompt-icon" data-content=">"></span>
                                 <span class="js-prompt-text" data-content="{{ .Content.Message }}"></span>
                             </div>
                         </div>
                         <div class="pb-4">
-                            <div class="js-typewriting">
+                            <div class="js-typewriting flex">
                                 <span class="mr-4 js-prompt-icon" data-content=">"></span>
                                 <span class="js-prompt-text" data-content="{{ .Content.Submessage }}"></span>
                             </div>
                         </div>
                         {{ range $svc, $link := .Content.Links }}
                         <div class="block pb-2">
-                            <div class="js-typewriting">
+                            <div class="js-typewriting flex">
                                 <span class="js-prompt-prefix ml-6 mr-2" data-content="*"></span>
                                 <a href="{{ $link }}" class="js-prompt-text link" data-content="{{ $svc }}"></a>
                             </div>
                         </div>
                         {{ end }}
                         <div class="pb-4">
-                            <div class="js-typewriting">
+                            <div class="js-typewriting flex">
                                 <span class="mr-4 js-prompt-icon" data-content=">"></span>
                                 <span class="js-prompt-text cursor" data-content="&#8402;"></span>
                             </div>
