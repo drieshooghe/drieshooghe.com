@@ -681,20 +681,20 @@ button,
 }
 
 .cursor {
-  border-right: .05em solid #222f3e;
+  opacity: 1;
   -webkit-animation: caret 1s steps(1) infinite;
           animation: caret 1s steps(1) infinite;
 }
 
 @-webkit-keyframes caret {
   50% {
-    border-color: transparent;
+    opacity: 0;
   }
 }
 
 @keyframes caret {
   50% {
-    border-color: transparent;
+    opacity: 0;
   }
 }
 
