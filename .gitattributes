@@ -1,2 +1,3 @@
 static/* linguist-vendored
+resources/* linguist-vendored
 *.go linguist-language=golang
