@@ -11,6 +11,7 @@ handlers:
 # All URLs are handled by the Mux router
 - url: /.*
   script: _drieshooghe
+  secure: always
 
 skip_files:
 - ^(.*/)?#.*#$
