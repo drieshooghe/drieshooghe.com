@@ -1,7 +1,0 @@
-@import "tailwindcss/preflight";
-
-@import "tailwindcss/components";
-@import "components/links";
-@import "components/cursor";
-
-@import "tailwindcss/utilities";
