@@ -1,31 +1,28 @@
 {
-  "name": "drieshooghe",
-  "version": "1.0.0",
-  "description": "> Personal website",
-  "private": true,
+  "name": "drieshooghe.com",
+  "version": "3.0.0",
+  "description": "Personal website",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com:drieshooghe/drieshooghe.com.git"
+    "url": "git+https://github.com/drieshooghe/drieshooghe.com.git"
   },
-  "keywords": [],
   "author": "Dries Hooghe",
   "license": "ISC",
-  "homepage": "https://github.com/drieshooghe/drieshooghe.com",
-  "devDependencies": {
-    "autoprefixer": "^8.6.2",
-    "event-stream": "^3.3.4",
-    "gulp": "^3.9.1",
-    "gulp-concat": "^2.6.1",
-    "gulp-postcss": "^7.0.1",
-    "gulp-sourcemaps": "^2.6.4",
-    "gulp-typescript": "^5.0.0-alpha.1",
-    "gulp-uglify": "^3.0.0",
-    "postcss-import": "^11.1.0",
-    "stylelint-config-recommended": "^2.1.0",
-    "tailwindcss": "^0.5.3",
-    "typescript": "^2.9.1"
+  "bugs": {
+    "url": "https://github.com/drieshooghe/drieshooghe.com/issues"
+  },
+  "homepage": "https://github.com/drieshooghe/drieshooghe.com#readme",
+  "engines": {
+    "node": ">=10.13.0",
+    "npm": ">=6.4.1"
   },
   "dependencies": {
-    "cookieconsent": "^3.0.6"
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "firebase": "^5.5.5"
   }
 }
