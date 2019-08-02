@@ -1,7 +1,0 @@
-.link{
-    @apply .text-black .no-underline .border-b .border-grey-light;
-    transition: all .3s ease-in-out;
-}
-.link:hover{
-    @apply .border-b .border-grey;
-}

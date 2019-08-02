@@ -1,3 +1,0 @@
-# drieshooghe
-
-> Personal website
